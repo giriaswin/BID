@@ -1,0 +1,54 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-bid-base: #0D0F14;
+  --color-bid-surface: #151922;
+  --color-bid-navy: #1B315F;
+  --color-bid-gold: #E0B04B;
+  --color-bid-ivory: #F3EFE7;
+  --color-bid-muted: #8F9BA8;
+
+  --font-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bid-base text-bid-ivory font-sans antialiased selection:bg-bid-gold selection:text-bid-base min-h-screen relative;
+  }
+  
+  /* Global dotted background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -10;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: center top;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal tracking-tight;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-bid-base;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-bid-surface rounded-full border border-bid-base;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-bid-muted;
+}
