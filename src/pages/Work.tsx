@@ -51,7 +51,7 @@ export function Work() {
       <Helmet>
         <title>Work | BID</title>
         <meta name="description" content="Explore BID's portfolio of engineering and design projects. Case studies spanning platforms, ML integration, and scalable interfaces." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/work" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/work" />
       </Helmet>
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <AnimatePresence>

@@ -16,7 +16,7 @@ export function Home() {
       <Helmet>
         <title>BID | Break It Down</title>
         <meta name="description" content="BID is a student-led initiative building modern, high-impact digital experiences. We specialize in UI/UX engineering, web development, and rapid MVP prototyping." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/" />
       </Helmet>
       <PageTransition className="w-full">
       {/* Hero Section */}

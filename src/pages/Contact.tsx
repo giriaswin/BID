@@ -13,7 +13,7 @@ export function Contact() {
       <Helmet>
         <title>Contact | BID</title>
         <meta name="description" content="Get in touch with BID. Whether you need absolute clarity in your product's architecture or digital presence, the dialogue starts here." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/contact" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/contact" />
       </Helmet>
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl min-h-screen flex flex-col relative overflow-hidden">
       

@@ -29,7 +29,7 @@ export function About() {
       <Helmet>
         <title>About | BID</title>
         <meta name="description" content="BID is a student-led initiative focused on UI/UX engineering, web development, and digital growth. Learn more about our mission and approach." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/about" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/about" />
       </Helmet>
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <div className="max-w-4xl mb-24">

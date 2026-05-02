@@ -61,7 +61,7 @@ export function Process() {
       <Helmet>
         <title>Process | BID</title>
         <meta name="description" content="Our engineered approach: from deconstruction to structured aesthetics and deployment. See how BID builds digital products reliably." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/process" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/process" />
       </Helmet>
       <PageTransition className="px-4 sm:px-6 pt-32 pb-32 mx-auto max-w-7xl overflow-hidden">
       <div className="max-w-3xl mb-32 relative">

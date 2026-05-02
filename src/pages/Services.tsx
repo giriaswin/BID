@@ -193,7 +193,7 @@ export function Services() {
       <Helmet>
         <title>Services | BID</title>
         <meta name="description" content="Discover BID's capabilities in UI/UX systems, product experience, technical architecture, and web development." />
-        <link rel="canonical" href="https://breakitdown.vercel.app/services" />
+        <link rel="canonical" href="https://bidstudio.vercel.app/services" />
       </Helmet>
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <div className="max-w-3xl mb-24 relative">
