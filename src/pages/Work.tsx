@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/layout/PageTransition";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/lib/SEO";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, X } from "lucide-react";
 import { useState } from "react";
@@ -48,11 +48,11 @@ export function Work() {
 
   return (
     <>
-      <Helmet>
-        <title>Work | BID</title>
-        <meta name="description" content="Explore BID's portfolio of engineering and design projects. Case studies spanning platforms, ML integration, and scalable interfaces." />
-        <link rel="canonical" href="https://bidstudio.vercel.app/work" />
-      </Helmet>
+      <SEO
+        title="Work | BID"
+        description="Explore BID's portfolio of engineering and design projects — case studies in platforms, ML integration, and scalable interfaces."
+        path="/work"
+      />
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <AnimatePresence>
         {selectedImage && (

@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/layout/PageTransition";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/lib/SEO";
 import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Layers, CircleDotDashed } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
@@ -13,11 +13,11 @@ export function Home() {
 
   return (
     <>
-      <Helmet>
-        <title>BID | Break It Down</title>
-        <meta name="description" content="BID is a student-led initiative building modern, high-impact digital experiences. We specialize in UI/UX engineering, web development, and rapid MVP prototyping." />
-        <link rel="canonical" href="https://bidstudio.vercel.app/" />
-      </Helmet>
+      <SEO
+        title="BID | Break It Down"
+        description="BID is a student-led studio building high-impact digital products — specializing in UI/UX, web development, and rapid MVP prototyping."
+        path="/"
+      />
       <PageTransition className="w-full">
       {/* Hero Section */}
       <section ref={containerRef} className="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden px-4 sm:px-6">

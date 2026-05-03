@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/layout/PageTransition";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/lib/SEO";
 import { ChevronDown, Clock, Briefcase } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -190,11 +190,11 @@ const ServiceCard: React.FC<{ service: typeof services[0] }> = ({ service }) => 
 export function Services() {
   return (
     <>
-      <Helmet>
-        <title>Services | BID</title>
-        <meta name="description" content="Discover BID's capabilities in UI/UX systems, product experience, technical architecture, and web development." />
-        <link rel="canonical" href="https://bidstudio.vercel.app/services" />
-      </Helmet>
+      <SEO
+        title="Services | BID"
+        description="Discover BID's capabilities in UI/UX systems, product experience, technical architecture, and web development."
+        path="/services"
+      />
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <div className="max-w-3xl mb-24 relative">
         <span className="font-sans text-bid-muted text-sm tracking-widest uppercase mb-6 block drop-shadow-md">Capabilities</span>

@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/layout/PageTransition";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/lib/SEO";
 import { ArrowUpRight, Scan, X, Youtube, Linkedin, Instagram } from "lucide-react";
 import { useState } from "react";
 import QRCode from "react-qr-code";
@@ -10,11 +10,11 @@ export function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact | BID</title>
-        <meta name="description" content="Get in touch with BID. Whether you need absolute clarity in your product's architecture or digital presence, the dialogue starts here." />
-        <link rel="canonical" href="https://bidstudio.vercel.app/contact" />
-      </Helmet>
+      <SEO
+        title="Contact | BID"
+        description="Get in touch with BID — for product architecture, UI/UX engineering, or digital presence work. Start the conversation here."
+        path="/contact"
+      />
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl min-h-screen flex flex-col relative overflow-hidden">
       
       {/* Lightbox for QR Code */}

@@ -6,10 +6,20 @@
     <link rel="alternate icon" href="/favicon.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="BID | Break It Down" />
+    <meta itemprop="description" content="BID is a student-led studio building high-impact digital products — specializing in UI/UX, web development, and rapid MVP prototyping." />
+    <meta itemprop="image" content="https://bidstudio.vercel.app/og-image.webp" />
+    <meta itemprop="url" content="https://bidstudio.vercel.app/" />
+    <meta itemprop="publisher" content="BID | Break It Down" />
+    <meta itemprop="author" content="BID | Break It Down" />
+    <meta name="google-site-verification" content="hljBDLG7-qqgEpiYvC6nEq8DglrxoXIn8c5GmIZ05Dc" />
+
+
     <!-- Primary Meta Tags -->
     <title>BID | Break It Down</title>
     <meta name="title" content="BID | Break It Down" />
-    <meta name="description" content="BID is a student-led initiative building modern, high-impact digital experiences. We specialize in UI/UX engineering, web development, and rapid MVP prototyping." />
+    <meta name="description" content="BID is a student-led studio building high-impact digital products — specializing in UI/UX, web development, and rapid MVP prototyping." />
     <meta name="keywords" content="UI/UX design, web development, software engineering, MVP prototyping, student-led tech agency, digital experiences, tech breakdowns, BID, Break It Down" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="BID | Break It Down" />
@@ -19,11 +29,16 @@
     <link rel="canonical" href="https://bidstudio.vercel.app/" />
     <link rel="sitemap" href="/sitemap.xml" />
 
+    <!-- Geo tags (update with accurate values for local SEO) -->
+    <meta name="geo.placename" content="City, Region" />
+    <meta name="geo.position" content="0.0000;0.0000" />
+    <meta name="ICBM" content="0.0000, 0.0000" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bidstudio.vercel.app/" />
     <meta property="og:title" content="BID | Break It Down" />
-    <meta property="og:description" content="BID is a student-led initiative building modern, high-impact digital experiences. We specialize in UI/UX engineering, web development, and rapid MVP prototyping." />
+    <meta property="og:description" content="BID is a student-led studio building high-impact digital products — specializing in UI/UX, web development, and rapid MVP prototyping." />
     <meta property="og:image" content="https://bidstudio.vercel.app/og-image.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -34,29 +49,68 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://bidstudio.vercel.app/" />
     <meta name="twitter:title" content="BID | Break It Down" />
-    <meta name="twitter:description" content="BID is a student-led initiative building modern, high-impact digital experiences. We specialize in UI/UX engineering, web development, and rapid MVP prototyping." />
+    <meta name="twitter:description" content="BID is a student-led studio building high-impact digital products — specializing in UI/UX, web development, and rapid MVP prototyping." />
     <meta name="twitter:image" content="https://bidstudio.vercel.app/og-image.webp" />
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data: Organization + WebSite + LocalBusiness for AEO/GEO -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "BID | Break It Down",
-        "url": "https://bidstudio.vercel.app/",
-        "logo": "https://bidstudio.vercel.app/favicon.svg",
-        "description": "Student-led digital and technology initiative focused on building modern, high-impact digital experiences.",
-        "image": "https://bidstudio.vercel.app/og-image.webp",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "url": "https://bidstudio.vercel.app/contact"
-        },
-        "sameAs": [
-          "https://www.youtube.com/@thebidofficial",
-          "https://www.linkedin.com/company/bidbreakitdown",
-          "https://instagram.com/bidbreakitdown",
-          "https://twitter.com/rgiriaswin"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "BID | Break It Down",
+            "url": "https://bidstudio.vercel.app/",
+            "logo": "https://bidstudio.vercel.app/favicon.svg",
+            "description": "Student-led studio building high-impact digital products.",
+            "sameAs": [
+              "https://www.youtube.com/@thebidofficial",
+              "https://www.linkedin.com/company/bidbreakitdown",
+              "https://instagram.com/bidbreakitdown",
+              "https://twitter.com/rgiriaswin"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "Customer Support",
+              "url": "https://bidstudio.vercel.app/contact"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://bidstudio.vercel.app/",
+            "name": "BID | Break It Down",
+            "description": "Student-led studio building high-impact digital products.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://bidstudio.vercel.app/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "LocalBusiness",
+            "name": "BID | Break It Down",
+            "image": "https://bidstudio.vercel.app/og-image.webp",
+            "description": "Student-led studio building high-impact digital products.",
+            "url": "https://bidstudio.vercel.app/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "",
+              "addressLocality": "City",
+              "addressRegion": "Region",
+              "postalCode": "",
+              "addressCountry": "Country"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 0.0,
+              "longitude": 0.0
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "",
+              "contactType": "Customer Support"
+            }
+          }
         ]
       }
     </script>

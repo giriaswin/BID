@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/layout/PageTransition";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/lib/SEO";
 import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -26,11 +26,11 @@ export function About() {
 
   return (
     <>
-      <Helmet>
-        <title>About | BID</title>
-        <meta name="description" content="BID is a student-led initiative focused on UI/UX engineering, web development, and digital growth. Learn more about our mission and approach." />
-        <link rel="canonical" href="https://bidstudio.vercel.app/about" />
-      </Helmet>
+      <SEO
+        title="About | BID"
+        description="Learn about BID — a student-led studio focused on UI/UX engineering, web development, and practical product growth." 
+        path="/about"
+      />
       <PageTransition className="px-4 sm:px-6 pt-32 pb-24 mx-auto max-w-7xl">
       <div className="max-w-4xl mb-24">
         <span className="font-sans text-bid-muted text-sm tracking-widest uppercase mb-6 block drop-shadow-md">PURPOSE</span>
