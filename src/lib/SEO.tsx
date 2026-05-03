@@ -45,6 +45,9 @@ export function SEO({ title, description, path = '/', image = DEFAULT_IMAGE }: S
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={shortDesc} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:site" content="@rgiriaswin" />
+      <meta name="twitter:creator" content="@rgiriaswin" />
+      <meta name="twitter:url" content={url} />
 
       {/* JSON-LD for this page */}
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
